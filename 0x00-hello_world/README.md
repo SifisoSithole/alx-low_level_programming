@@ -10,3 +10,5 @@ This directoty contains all of the Hello, World projects:
 
 4-puts.c - This program prints exactly "Programming is like building a multilingual puzzle", followed by anew line. It uses the puts function.
 
+5-printf.c - This program prints with proper grammar, but the outcome is a piece of art. It uses printf
+
