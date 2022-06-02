@@ -6,3 +6,4 @@ This directoty contains all of the Hello, World projects:
 
 2-assembler - This script generates the assembly code of a C code. The C file name should be saved in the variable $CFILE, the output file will be named the same as the C file, but with the extension .s
 
+3-name - This script compiles a C file and creates an executable named cisfun. The C file name should be saved in the variable $CFILE
