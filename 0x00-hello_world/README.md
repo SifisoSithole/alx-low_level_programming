@@ -13,4 +13,5 @@ This directoty contains all of the Hello, World projects:
 5-printf.c - This program prints with proper grammar, but the outcome is a piece of art. It uses printf
 
 6-size.c - This program prints the size of various types on the computer it is compiled and run on
+101-quote.c - This program prints and that piece of art is useful" - Dora Korpar, 2015-10-19 to the standard error
 
