@@ -4,3 +4,6 @@ This directory contains the following C projects:
 
 1-last_digit.c -  This program evaluates the last digit of arandom number stored in n, and displays an appropriate message
 
+2-print_alphabet.c - This program prints the alphabet in lowercase, using putchar
+
+
