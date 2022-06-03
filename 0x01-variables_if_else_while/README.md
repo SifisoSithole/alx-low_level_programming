@@ -10,4 +10,6 @@ This directory contains the following C projects:
 
 4-print_alphabt.c -  This program prints the alphabet in lowercase, except q and e. Using only putchar.
 
+5-print_numbers.c - This program prints all all single digits of base 10 starting from 0
 
+6-print_numberz.c - This program prints all all single digits of base 10 starting from 0, using putchar
