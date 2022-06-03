@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
 
@@ -14,20 +15,19 @@
 int main(void)
 {
 	int n;
-	char message[];
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
-		message = "is positive";
+		char message[] = "is positive";
 
 	if (n == 0)
-		message = "is zero";
+		char message[] = "is zero";
 
 	if (n < 0)
-		message = "is negative";
+		char message[] = "is negative";
 
-	printf("%ld %s\n", n, message);
+	printf("%d %s\n", n, message);
 	return (0);
 }
