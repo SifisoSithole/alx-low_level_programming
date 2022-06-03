@@ -18,4 +18,4 @@ This directory contains the following C projects:
 
 8-print_base16.c - This program prints all of the numbers of base 16 in lowercase
 
-
+9-print_comp.c - This program prints all possible combinations of single-digit numbers 
