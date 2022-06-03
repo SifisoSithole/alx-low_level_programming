@@ -30,7 +30,7 @@ int main(void)
 		strcpy(msg, "and is 0");
 	}
 
-	if (lstDigit < 6)
+	if (lstDigit < 6 && lstDigit != 0)
 	{
 		strcpy(msg, "and is less than 6 and not 0");
 	}
