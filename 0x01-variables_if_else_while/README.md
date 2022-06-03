@@ -20,6 +20,8 @@ This directory contains the following C projects:
 
 9-print_comp.c - This program prints all possible combinations of single-digit numbers
 
-100-print_comb.c - This program prints all possible different combinations of two digits
+100-print_comb3.c - This program prints all possible different combinations of two digits
+
+101-print_comb4.c - This program prints all possible different combinations of three digits
 
  
