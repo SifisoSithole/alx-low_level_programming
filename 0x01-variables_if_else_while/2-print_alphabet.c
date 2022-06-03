@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char alphabets[27] = "abcdefghijklmnopqrstuvxyz";
+	char alphabets[27] = "abcdefghijklmnopqrstuvwxyz";
 	int index = 0;
 
 	while (alphabets[index] != '\0')
