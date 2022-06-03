@@ -8,4 +8,6 @@ This directory contains the following C projects:
 
 3-print_alphabet.c - This program prints the alphabet in lowercase and uppercase, using putchar
 
+4-print_alphabt.c -  This program prints the alphabet in lowercase, except q and e. Using only putchar.
+
 
