@@ -13,3 +13,7 @@ This directory contains the following C projects:
 5-print_numbers.c - This program prints all all single digits of base 10 starting from 0
 
 6-print_numberz.c - This program prints all all single digits of base 10 starting from 0, using putchar
+
+7-print_tebahpla.c - This program prints the alphabets in reverse order, using putchar
+
+
