@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 /* more headers goes there */
 
 /**
@@ -15,18 +16,25 @@
 int main(void)
 {
 	int n;
+	char message[16];
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
-		char message[] = "is positive";
+	{
+		strcpy(message, "is positive");
+	}
 
 	if (n == 0)
-		char message[] = "is zero";
+	{
+		strcpy(message, "is zero");
+	}
 
 	if (n < 0)
-		char message[] = "is negative";
+	{
+		strcpy(message, "is negative");
+	}
 
 	printf("%d %s\n", n, message);
 	return (0);
