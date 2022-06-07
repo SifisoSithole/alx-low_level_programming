@@ -10,4 +10,6 @@ main.h - This is the header file that contains all of the prototypes for the fun
 
 3-islower.c - This fuction checks for lowercase character
 
+4-isalpha.c - This fuction checks if c is a letter
+
 
