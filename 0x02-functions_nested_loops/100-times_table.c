@@ -37,11 +37,11 @@ void print_times_table(int n)
 {
 	int x, y, num;
 
-	for (x = 0; x < n ; x++)
+	for (x = 0; x <= n ; x++)
 	{
 		if (n > 15 || n < 0)
 			break;
-		for (y = 0; y < n; y++)
+		for (y = 0; y <= n; y++)
 		{
 			num = y * x;
 			printFunc(num);
