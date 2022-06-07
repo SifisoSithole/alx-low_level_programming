@@ -27,6 +27,7 @@ void times_table(void)
 			if (y == 9)
 				break;
 
+			_putchar(',');
 			if (x * (y + 1) < 10)
 			{
 				_putchar(' ');
@@ -34,7 +35,6 @@ void times_table(void)
 			}
 			else
 				_putchar(' ');
-
 		}
 		_putchar('\n');
 	}
