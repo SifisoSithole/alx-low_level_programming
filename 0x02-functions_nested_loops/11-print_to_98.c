@@ -21,7 +21,7 @@ void print(int i)
 	if (i >= 100)
 	{
 		_putchar((i / 100) + '0');
-		_putchar(i % 100) + '0');
+		_putchar((i % 100) + '0');
 		_putchar((i % 10) + '0');
 	}
 	else
