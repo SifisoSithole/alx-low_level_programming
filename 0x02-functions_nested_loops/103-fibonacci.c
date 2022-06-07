@@ -7,7 +7,6 @@
 int main(void)
 {
 	long int num1 = 1, num2 = 2, temp, sum = 2;
-	int i;
 
 	while (num2 < 4000000)
 	{
