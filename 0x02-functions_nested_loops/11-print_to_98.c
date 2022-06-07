@@ -18,14 +18,10 @@
 
 void print(int i)
 {
-	int num = 0;
-
 	if (i >= 100)
 	{
 		_putchar((i / 100) + '0');
-		num = num % 100;
-		num = num / 10;
-		_putchar(num + '0');
+		_putchar(i % 100) + '0');
 		_putchar((i % 10) + '0');
 	}
 	else
