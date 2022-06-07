@@ -18,7 +18,7 @@
 
 void print(int i)
 {
-	int num;
+	int num = 0;
 
 	if (i >= 100)
 	{
