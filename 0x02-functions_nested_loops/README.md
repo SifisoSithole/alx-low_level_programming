@@ -20,4 +20,6 @@ main.h - This is the header file that contains all of the prototypes for the fun
 
 8-24_hours.c - This program prints every minute of the day
 
+9-times_table.c - This function prints the 9 times table
+
 
