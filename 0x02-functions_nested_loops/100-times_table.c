@@ -45,7 +45,7 @@ void print_times_table(int n)
 		{
 			num = y * x;
 			printFunc(num);
-			if (y == 9)
+			if (y == n)
 				break;
 
 			_putchar(',');
