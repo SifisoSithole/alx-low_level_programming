@@ -7,3 +7,7 @@ main.h - This is the header file that contains all of the prototypes for the fun
 1-alphabet.c - This function prints the alphabet, in lowercase, followed by a new line
 
 2-print_alphabet_x10.c - This function prints the alphabet ten times, in lowercase, followed by a new line
+
+3-islower.c - This fuction checks for lowercase character
+
+
