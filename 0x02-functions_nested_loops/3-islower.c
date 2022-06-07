@@ -1,5 +1,5 @@
 /**
- * islower - This fuction checks for lowercase character
+ * _islower - This fuction checks for lowercase character
  *
  * @c: A single character
  *
