@@ -26,7 +26,7 @@ void print(int i)
 		num = num % 100;
 		num = num / 10;
 		_putchar(num + '0');
-		_putchar((i / 10) + '0');
+		_putchar((i % 10) + '0');
 	}
 	else
 	{
@@ -56,7 +56,7 @@ void print_to_98(int n)
 			else
 				_putchar(num + '0');
 
-			if (num != 98)
+			if (i != 98)
 			{
 				_putchar(',');
 				_putchar(' ');
