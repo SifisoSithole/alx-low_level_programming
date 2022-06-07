@@ -16,4 +16,4 @@ main.h - This is the header file that contains all of the prototypes for the fun
 
 6-abs.c - This function computes the absolute value of an integer
 
-
+7-print_last_digit.c - This function returns the last digit of a number
