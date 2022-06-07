@@ -5,7 +5,7 @@
  *
  * Return: 1 if lowercase or 0 if not
  */
-int islower(int c)
+int _islower(int c)
 {
 	char n;
 
