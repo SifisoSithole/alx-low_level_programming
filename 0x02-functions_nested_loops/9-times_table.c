@@ -24,17 +24,17 @@ void times_table(void)
 				_putchar((num % 10) + '0');
 			}
 
-			if (y != 9)
-				_putchar(',');
-			
-			if (y != 9 && x * (y + 1) < 10)
+			if (y == 9)
+				break;
+
+			if (x * (y + 1) < 10)
 			{
 				_putchar(' ');
 				_putchar(' ');
 			}
 			else
 				_putchar(' ');
-				
+
 		}
 		_putchar('\n');
 	}
