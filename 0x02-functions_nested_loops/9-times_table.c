@@ -20,8 +20,8 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar((num / 10));
-				_putchar((num % 10));
+				_putchar((num / 10) + '0');
+				_putchar((num % 10) + '0');
 			}
 
 			if (y != 9)
