@@ -22,4 +22,4 @@ main.h - This is the header file that contains all of the prototypes for the fun
 
 9-times_table.c - This function prints the 9 times table
 
-
+10-add.c - This function adds two integers
