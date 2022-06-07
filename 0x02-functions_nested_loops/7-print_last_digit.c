@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_last_digit - This function returns the last digit of a number
  *
@@ -8,6 +10,7 @@
 int print_last_digit(int num)
 {
 	num = num % 10;
+	_putchar(num);
 
 	return (num);
 }
