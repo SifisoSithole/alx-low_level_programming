@@ -26,7 +26,7 @@ void print(int i)
 		num = num % 100;
 		num = num / 10;
 		_putchar(num + '0');
-		_putchar((i % 10) + '0');
+		_putchar((i / 10) + '0');
 	}
 	else
 	{
