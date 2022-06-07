@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_sign - This function prints the sign of a number
  *
@@ -7,16 +9,25 @@
  */
 int print_sign(int n)
 {
-	int returnValue;
+	int retrnValue;
 
 	if (n > 0)
-		returnValue = 1;
+	{
+		_putchar("+");
+		retrnValue = 1;
+	}
 
 	if (n == 0)
-		returnValue = 0;
+	{
+		_putchar("0");
+		retrnValue = 0;
+	}
 
 	if (n < 0)
-		returnValue = -1;
-	
-	return (returnValue);
+	{
+		_putchar("-");
+		retrnValue = -1;
+	}
+
+	return (retrnValue);
 }
