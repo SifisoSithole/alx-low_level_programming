@@ -23,6 +23,7 @@ int _isalpha(int c)
 		{
 			return (1);
 		}
+	}
 
 	return (0);
 }
