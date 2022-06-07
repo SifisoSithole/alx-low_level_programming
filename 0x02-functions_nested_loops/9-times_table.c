@@ -16,6 +16,7 @@ void times_table(void)
 			num = y * x;
 			if (num < 10)
 			{
+				_putchar(' ');
 				_putchar(num + '0');
 			}
 			else
