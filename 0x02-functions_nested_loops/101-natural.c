@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int sum = 0, cnt3 = 0, cnt5 = 0, i, cap = 0;
+	int sum = 0, cnt3 = 0, cnt5 = 0, cap = 0;
 
 
 	while (cap < 1024)
