@@ -12,4 +12,6 @@ main.h - This is the header file that contains all of the prototypes for the fun
 
 4-isalpha.c - This fuction checks if c is a letter
 
+5-sign.c - This function prints the sign of a number. Returns 1 if n greater than 0, 0 if n is 0, -1 if n is less than 0
+
 
