@@ -1,43 +1,50 @@
 #include "main.h"
+/**
+ * printFunc - To print
+ * @num: number to print
+ */
+void printFunc(int num)
+{
+	int num1 = 0;
+
+	if (num < 10)
+	{
+		_putchar(num + '0');
+	}
+
+	if (num > 9 && num < 100)
+	{
+		_putchar((num / 10) + '0');
+		_putchar((num % 10) + '0');
+	}
+
+	if (num >= 100)
+	{
+		_putchar((num / 100) + '0');
+		num1 = num / 10;
+		_putchar((num1 % 10) + '0');
+		_putchar((num % 10) + '0');
+	}
+}
 
 /**
- * times_table - This function prints the 9 times table
+ * print_times_table - This function prints the n times table
+ * @n: number
  *
  * Return; void
  */
 void print_times_table(int n)
 {
 	int x, y, num;
-	if (n > 15 || n < 0)
-	{
-		_putchar('');
-		return (0);
-	}
 
 	for (x = 0; x < n ; x++)
 	{
+		if (n > 15 || n < 0)
+			break;
 		for (y = 0; y < n; y++)
 		{
 			num = y * x;
-			if (num < 10)
-			{
-				_putchar(num + '0');
-			}
-			
-			if (num > 9 && num < 100)
-			{
-				_putchar((num / 10) + '0');
-				_putchar((num % 10) + '0');
-			}
-
-			if (num >= 100)
-			{
-				_putchar((i / 100) + '0');
-				num1 = i / 10;
-				_putchar((num % 10) + '0');
-				_putchar((i % 10) + '0');
-			}
-
+			printFunc(num);
 			if (y == 9)
 				break;
 
@@ -48,13 +55,13 @@ void print_times_table(int n)
 				_putchar(' ');
 				_putchar(' ');
 			}
-			
+
 			if (x * (y + 1) >= 10 && x * (y + 1) < 100)
 			{
 				_putchar(' ');
 				_putchar(' ');
 			}
-			
+
 			if (x * (y + 1) >= 100)
 				_putchar(' ');
 
