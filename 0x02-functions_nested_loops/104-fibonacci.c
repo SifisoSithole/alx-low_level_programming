@@ -11,9 +11,9 @@ int main(void)
 
 	printf("%lu, %lu, ", num1, num2);
 
-	for (i = 1; i <= 96; i++)
+	for (i = 1; i <= 97; i++)
 	{
-		if (i == 96)
+		if (i == 97)
 		{
 			unsigned long temp2;
 
