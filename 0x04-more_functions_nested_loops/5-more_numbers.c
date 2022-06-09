@@ -22,6 +22,7 @@ void more_numbers(void)
 			if (control)
 				_putchar('1');
 			_putchar(i);
+			i++;
 		}
 		_putchar('\n');
 	}
