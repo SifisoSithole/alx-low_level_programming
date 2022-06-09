@@ -18,4 +18,4 @@ This directory contains the following C functions
 
 8-print_square - This functions prints a square
 
-
+10-print_triangle - This functions prints a triangle
