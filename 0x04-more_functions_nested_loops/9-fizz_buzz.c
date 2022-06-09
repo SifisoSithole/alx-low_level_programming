@@ -30,7 +30,6 @@ int main(void)
 			}
 			continue;
 		}
-
 		if (i == cap2)
 		{
 			if (i == 100)
@@ -46,6 +45,5 @@ int main(void)
 		}
 		printf("%d ", i);
 	}
-
 	return (0);
 }
