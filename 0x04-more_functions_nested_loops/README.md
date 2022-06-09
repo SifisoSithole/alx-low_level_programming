@@ -16,4 +16,6 @@ This directory contains the following C functions
 
 7-print_diagonal - This functions draws a diagonal line
 
+8-print_square - This functions prints a square
+
 
