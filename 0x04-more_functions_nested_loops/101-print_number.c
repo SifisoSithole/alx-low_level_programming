@@ -5,7 +5,7 @@
  */
 void print_numbr(int n)
 {
-	if (n / 10)
+	if (n > 10)
 		print_numbr(n);
 
 	_putchar((n % 10) + '0');
