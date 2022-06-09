@@ -12,4 +12,8 @@ This directory contains the following C functions
 
 5-more_numbers.c - This function prints numbers from 0 to 14
 
-4-print_line.c - This functions '_' n times
+6-print_line.c - This functions '_' n times
+
+7-print_diagonal - This functions draws a diagonal line
+
+
