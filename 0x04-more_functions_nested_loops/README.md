@@ -8,4 +8,6 @@ This directory contains the following C functions
 
 3-print_numbers.c - This function prints numbers from 0 to 9
 
+4-print_most_numbers.c - This function prints numbers from 0 to 9, exlcuding for 2 & 4
+
 
