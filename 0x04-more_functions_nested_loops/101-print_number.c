@@ -9,7 +9,7 @@ void print_numbr(int n)
 	{
 		_putchar('0');
 	}
-	if (n / 10)
+	if (n / 10 != 0)
 		print_numbr(n / 10);
 
 	_putchar((n % 10) + '0');
