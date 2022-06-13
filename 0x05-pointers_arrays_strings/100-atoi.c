@@ -82,7 +82,7 @@ int _atoi(char *s)
 	}
 	if (negative % 2 != 0)
 	{
-		signedTotal = (int)(total * - 1);
+		signedTotal = (int)(total * -1);
 		return (signedTotal);
 	}
 	return (total);
