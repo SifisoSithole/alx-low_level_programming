@@ -1,25 +1,6 @@
 #include "main.h"
 
 /**
- * _strlen - This function returns the length of a string
- *
- * @s: String to be counted
- *
- * Return: The number of characters in s
- */
-int _strlen(char *s)
-{
-	int counter = 0, index = 0;
-
-	while (s[index] != '\0')
-	{
-		counter++;
-		index++;
-	}
-	return (counter);
-}
-
-/**
  * puts2 - This function prints every other character of a string,
  * starting with the first character
  *
@@ -27,7 +8,7 @@ int _strlen(char *s)
  */
 void puts2(char *str)
 {
-	int index = _strlen(str) - 1;
+	int index = 0;
 
 	while (str[index] != '\0')
 	{
