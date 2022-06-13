@@ -61,7 +61,9 @@ int test_for_digit(char c)
  */
 int _atoi(char *s)
 {
-	int noElements = _strlen(s), total = 0, i, result, negative = 0;
+	int noElements = _strlen(s), i, result, negative = 0;
+	unsigned int total = 0;
+	int signedTotal;
 
 	for (i = 0; i < noElements; i++)
 	{
@@ -79,6 +81,8 @@ int _atoi(char *s)
 		}
 	}
 	if (negative % 2 != 0)
-		total = total * -1;
+	{
+		signedTotal = (int)total * -1;
+		return (signedTotal);
 	return (total);
 }
