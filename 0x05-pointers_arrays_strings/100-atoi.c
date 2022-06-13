@@ -65,25 +65,16 @@ int _atoi(char *s)
 
 	for (i = 0; i < noElements; i++)
 	{
-		if (s[i] == ' ' || s[i] == '+')
-			continue;
-
-		if (s[i] == '-' && test_for_digit(s[i + 1]) == -2)
-			continue;
-
 		result = test_for_digit(s[i]);
 
 		if (result == -2)
 			continue;
 		else if (result == -1)
-			negative = 1;
+			negative++;
 		else
 			total = (total * 10) + result;
-
-		if (test_for_digit(s[i + 1]) == -2 || s[i + 1] == '-')
-		       break;	
 	}
-	if (negative == 1)
+	if (negative % 2 != 0)
 		total = total * -1;
 	return (total);
 }
