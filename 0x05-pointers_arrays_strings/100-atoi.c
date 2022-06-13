@@ -79,6 +79,9 @@ int _atoi(char *s)
 			negative = 1;
 		else
 			total = (total * 10) + result;
+
+		if (test_for_digit(s[i + 1]) == -2 || s[i + 1] == '-')
+		       break;	
 	}
 	if (negative == 1)
 		total = total * -1;
