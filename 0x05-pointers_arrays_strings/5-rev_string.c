@@ -32,6 +32,7 @@ void rev_string(char *s)
 	{
 		tempStr[i] = s[index];
 		index--;
+		i++;
 	}
 
 	index = 0;
