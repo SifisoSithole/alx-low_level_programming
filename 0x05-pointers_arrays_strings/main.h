@@ -9,4 +9,6 @@ void swap_int(int *a, int *b);
 
 int _strlrn(char *s);
 
+void _puts(char *str);
+
 #endif
