@@ -72,7 +72,11 @@ int _atoi(char *s)
 		else if (result == -1)
 			negative++;
 		else
+		{
 			total = (total * 10) + result;
+			if (test_for_digit(s[i + 1]) == -2)
+				break;
+		}
 	}
 	if (negative % 2 != 0)
 		total = total * -1;
