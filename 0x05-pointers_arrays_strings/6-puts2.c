@@ -29,7 +29,7 @@ void puts2(char *str)
 {
 	int index = _strlen(str) - 1;
 
-	while (index != '\0')
+	while (str[index] != '\0')
 	{
 		if (index % 2 == 0)
 			_putchar(str[index]);
