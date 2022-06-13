@@ -11,3 +11,5 @@
 5-rev_string.c - This function reverses a string
 
 6-puts2.c - This function prints every other character of a string, starting with the first character
+
+7-puts_half.c - This function prints half a string
