@@ -12,9 +12,9 @@ char *_strcpy(char *dest, char *src)
 	while (1)
 	{
 		dest[index] = src[index];
-		index++;
 		if (src[index] == '\0')
 			break;
+		index++;
 	}
 	return (dest);
 
