@@ -84,5 +84,6 @@ int _atoi(char *s)
 	{
 		signedTotal = (int)total * -1;
 		return (signedTotal);
+	}
 	return (total);
 }
