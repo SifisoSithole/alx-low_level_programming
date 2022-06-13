@@ -2,4 +2,4 @@
 
 1-swap.c - This function swaps the values of two integers
 
-
+2-strlen.c - This function returns the length of a string
