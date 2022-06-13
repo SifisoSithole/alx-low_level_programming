@@ -25,7 +25,7 @@ int _strlen(char *s)
 void rev_string(char *s)
 {
 	int index = _strlen(s), i = 0;
-	char tempStr[10];
+	char tempStr[];
 
 	index--;
 	while (index >= 0)
