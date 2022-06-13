@@ -33,7 +33,8 @@ void puts_half(char *str)
 	else
 	{
 		int firstElements = (index - 1) / 2;
-		index = index - firstElements - 1;
+
+		index = index - firstElements + 1;
 	}
 
 
