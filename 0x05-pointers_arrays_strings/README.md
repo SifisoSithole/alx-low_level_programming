@@ -6,4 +6,6 @@
 
 3-puts - This function prints a string
 
+4-print_rev.c - This function prints a string in reverse
+
 
