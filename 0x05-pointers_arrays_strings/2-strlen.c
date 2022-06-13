@@ -9,7 +9,7 @@ int _strlen(char *s)
 {
 	int counter = 0, index = 0;
 
-	while (s[index] != '\o')
+	while (s[index] != '\0')
 	{
 		counter++;
 	}
