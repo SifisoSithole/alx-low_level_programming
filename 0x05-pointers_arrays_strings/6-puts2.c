@@ -25,14 +25,14 @@ int _strlen(char *s)
  *
  * @str: String to be printed
  */
-void puts(char *str)
+void puts2(char *str)
 {
-	int index = _strlen(s) - 1;
+	int index = _strlen(str) - 1;
 
 	while (index != '\0')
 	{
 		if (index % 2 == 0)
-			_putchar(s[index]);
+			_putchar(str[index]);
 		index++;
 	}
 	_putchar('\n');
