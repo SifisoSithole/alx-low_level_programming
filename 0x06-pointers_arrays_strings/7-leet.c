@@ -21,6 +21,7 @@ char *leet(char *s)
 			}
 			index++;
 		}
+		index = 0;
 	}
 	return (s);
 }
