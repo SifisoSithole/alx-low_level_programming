@@ -26,7 +26,7 @@ int _strlen(char *s)
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int lenSrc = _strlen(src);
+	int lenSrc = _strlen(src) - 1;
 	int i;
 
 	for (i = 0; i < n; i++)
