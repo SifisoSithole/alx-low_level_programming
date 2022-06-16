@@ -7,3 +7,5 @@
 3-strcmp.c - This function compares two string
 
 4-rev_array.c This function reverses the content of an array of integers
+
+7-leet.c - This function encodes a string into 1337
