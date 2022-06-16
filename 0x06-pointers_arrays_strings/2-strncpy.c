@@ -32,11 +32,10 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if (index > lenSrc)
+		if (index >= lenSrc)
 			index = 0;
 		dest[i] = src[index];
 		index++;
 	}
-	dest[i] = '\0';
 	return (dest);
 }
