@@ -17,8 +17,10 @@ char *cap_string(char *s)
 		{
 			if (s[i] == p[a])
 			{
-				if (s[i + 1] >= 97 && s[i + 1] <= 122)
+				if ((s[i + 1] >= 97 && s[i + 1] <= 122))
 				{
+					if (p[a] == '\t')
+						s[i] = ' ';
 					s[i + 1] = s[i + 1] - 32;
 					break;
 				}
