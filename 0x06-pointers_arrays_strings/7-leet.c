@@ -6,8 +6,8 @@
  */
 char *leet(char *s)
 {
-	char letters[5] = "aeotl";
-	char numbers[5] = "43071";
+	char letters[6] = "aeotl";
+	char numbers[6] = "43071";
 	int i = 0;
 	int index = 0;
 
@@ -17,7 +17,7 @@ char *leet(char *s)
 		{
 			if (s[i] == letters[index] || s[i] == (letters[index] - 32))
 			{
-				s[i] = numbers[index];
+				s[i] = (char) numbers[index];
 			}
 			index++;
 		}
