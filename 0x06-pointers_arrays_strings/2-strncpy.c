@@ -26,13 +26,13 @@ int _strlen(char *s)
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int lenSrc = _strlen(src) - 1;
+	int lenSrc = _strlen(src);
 	int i;
 	int index = 0;
 
 	for (i = 0; i < n; i++)
 	{
-		if (index >= lenSrc)
+		if (index > lenSrc)
 			index = 0;
 		dest[i] = src[index];
 		index++;
