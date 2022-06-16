@@ -16,7 +16,10 @@ char *rot13(char *s)
 		while (letter[index] != '\0')
 		{
 			if (s[i] == letter[index])
+			{
 				s[i] = rt13[index];
+				break;
+			}
 			index++;
 		}
 		index = 0;
