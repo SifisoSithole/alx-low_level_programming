@@ -1,5 +1,5 @@
 /**
- * rot-13 - This function that encodes a string using rot13
+ * rot13 - This function that encodes a string using rot13
  * @s: String to encode
  *
  * Return: encoded string
