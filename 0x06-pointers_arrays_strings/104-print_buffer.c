@@ -15,7 +15,7 @@ void print_size(char b)
  */
 void print_buffer(char *b, int size)
 {
-	int i = 0, a, int bytes = 0, int noChar = 1, int space = 1;
+	int i = 0, a, bytes = 0, noChar = 1, space = 1;
 	char strPrint[12];
 
 	if (size == 0)
