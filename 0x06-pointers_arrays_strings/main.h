@@ -23,4 +23,6 @@ void print_number(int n);
 
 char *rot13(char *s);
 
+void print_buffer(char *b, int size);
+
 #endif
