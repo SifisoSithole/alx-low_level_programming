@@ -1,5 +1,5 @@
 /**
- * strstr - This function locates a substring
+ * _strstr - This function locates a substring
  * @haystack: Pointer to the string to search in
  * @needle: substring to search in haystack
  *
