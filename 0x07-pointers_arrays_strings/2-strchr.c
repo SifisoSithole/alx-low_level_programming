@@ -1,5 +1,5 @@
 /**
- * _strchar - This function locates a character in a string
+ * _strchr - This function locates a character in a string
  * @s: String to search for character c
  * @c: The character
  *
