@@ -5,3 +5,5 @@
 2-strlen_recursion.c - this function returns the lenght of string
 
 3-factorial.c - This Function returns the factorial of a given number
+
+4-pow_recursion.c -  This function returns the value of x to the power of y
