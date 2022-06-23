@@ -1,5 +1,5 @@
 /**
- * strlen - this function returns the lenght of string
+ * _strlen - this function returns the lenght of string
  * @s: String to count
  *
  * Return: Lenght of the string
@@ -20,7 +20,8 @@ int _strlen(char *s)
  * @s1: String to compare
  * @s2: String to compare
  * @a: Index of last element of s1
- * @s2: Index of last element of s2
+ * @b: Index of last element of s2
+ * @c: Controler
  *
  * Return: 1 if the asterick matches s1
  */
@@ -36,7 +37,7 @@ int wildcard_checker(char *s1, char *s2, int a, int b, int c)
 		return (0);
 
 	c = wildcard_checker(s1, s2, a - 1, b - 1, c);
-	
+
 	return (c);
 }
 
@@ -46,6 +47,9 @@ int wildcard_checker(char *s1, char *s2, int a, int b, int c)
  * @s2: String to compare
  * @a: Index of s1
  * @b: Index of s2
+ * @d: Last index of s1
+ * @e: Last index of s2
+ * @c: Controler
  *
  * Return: 1 if it matches or 0 if not
  */
