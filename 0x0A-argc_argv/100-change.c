@@ -27,7 +27,6 @@ int main(int argc, char *argv[])
 		printf("0\n");
 	else
 	{
-		printf("%d", cents);
 		while (sum != cents)
 		{
 			if ((sum + coins[i]) > cents)
