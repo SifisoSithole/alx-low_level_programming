@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * allocate_mem - This functions allocates memory
@@ -16,9 +15,9 @@ void allocate_mem(char **arrStr, char *str)
 		if (str[i] != ' ')
 		{
 			lenWord++;
-			if (str[i + 1] == ' ')
+			if (str[i + 1] == ' ' || str[i + 1] == '\0')
 			{
-				arrStr[index] = malloc(sizeof(char) * lenWord);
+				arrStr[index] = malloc(sizeof(char) * lenWord + 1);
 				if (arrStr[index] == NULL)
 				{
 					for (i = 0; i < index; i++)
@@ -53,11 +52,12 @@ char **strtow(char *str)
 	{
 		if (str[i] != ' ')
 		{
-			if (str[i + 1] == ' ')
+			if (str[i + 1] == ' ' || str[i + 1] == '\0')
 				noWords++;
 		}
 	}
-
+	if (noWords == 0)
+		return (NULL);
 	arrStr = malloc(sizeof(char *) * noWords + 1);
 	if (arrStr == NULL)
 		return (NULL);
@@ -68,7 +68,7 @@ char **strtow(char *str)
 		{
 			arrStr[y][x] = str[i];
 			x++;
-			if (str[i + 1] == ' ')
+			if (str[i + 1] == ' ' || str[i + 1] == '\0')
 			{
 				arrStr[y][x] = '\0';
 				x = 0;
