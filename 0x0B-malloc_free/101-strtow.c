@@ -61,7 +61,7 @@ char **strtow(char *str)
 	arrStr = malloc(sizeof(char *) * noWords + 1);
 	if (arrStr == NULL)
 		return (NULL);
-	allocate_mem();
+	allocate_mem(arrStr, str);
 	for (i = 0; str[i]; i++)
 	{
 		if (str[i] != ' ')
