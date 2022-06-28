@@ -58,7 +58,7 @@ char **strtow(char *str)
 	}
 	printf("%d\n", noWords);
 
-	arrStr = malloc(sizeof(char *) * noWords + 1);
+	arrStr = malloc(sizeof(char *) * noWords);
 	if (arrStr == NULL)
 		return (NULL);
 	allocate_mem(arrStr, str);
@@ -67,13 +67,13 @@ char **strtow(char *str)
 		if (str[i] != ' ')
 		{
 			arrStr[y][x] = str[i];
+			x++;
 			if (str[i + 1] == ' ')
 			{
-				arrStr[y][x + 1] = '\0';
+				arrStr[y][x] = '\0';
 				x = 0;
 				y++;
 			}
-			x++;
 		}
 	}
 	arrStr[y] = NULL;
