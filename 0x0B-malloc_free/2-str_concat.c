@@ -12,7 +12,6 @@ unsigned int _strlen(char *s)
 
 	while (s[i])
 		i++;
-
 	return (i);
 }
 
@@ -27,8 +26,7 @@ char *str_concat(char *s1, char *s2)
 {
 	unsigned int lenS1;
 	unsigned int lenS2;
-	unsigned int i;
-	unsigned int index;
+	unsigned int i, index;
 	char *buffer;
 
 	if (s1 == NULL && s2 == NULL)
@@ -45,7 +43,6 @@ char *str_concat(char *s1, char *s2)
 		}
 		else
 			lenS1 = _strlen(s1);
-
 		if (s2 == NULL && s1 != NULL)
 		{
 			lenS2 = 0;
@@ -54,14 +51,12 @@ char *str_concat(char *s1, char *s2)
 		else
 			lenS2 = _strlen(s2);
 	}
-
 	buffer = malloc((lenS1 + lenS2 + 1) * sizeof(char));
 	if (buffer == NULL)
 		return (NULL);
 
 	for (i = 0; i < lenS1; i++)
 		buffer[i] = s1[i];
-
 	index = i;
 	for (i = 0; i < lenS2; i++)
 	{
