@@ -18,7 +18,7 @@ void allocate_mem(char **arrStr, char *str)
 			lenWord++;
 			if (str[i + 1] == ' ')
 			{
-				arrStr[index] = malloc(sizeof(char) * (lenWord + 1));
+				arrStr[index] = malloc(sizeof(char) * lenWord);
 				if (arrStr[index] == NULL)
 				{
 					for (i = 0; i < index; i++)
@@ -29,6 +29,7 @@ void allocate_mem(char **arrStr, char *str)
 					free(arrStr);
 					break;
 				}
+				lenWord = 0;
 				index++;
 			}
 		}
@@ -46,7 +47,7 @@ char **strtow(char *str)
 	char **arrStr;
 	int i, noWords = 0, x = 0, y = 0;
 
-	if (str == NULL)
+	if (str == NULL || *str == '\0')
 		return (NULL);
 	for (i = 0; str[i]; i++)
 	{
@@ -56,9 +57,8 @@ char **strtow(char *str)
 				noWords++;
 		}
 	}
-	printf("%d\n", noWords);
 
-	arrStr = malloc(sizeof(char *) * noWords);
+	arrStr = malloc(sizeof(char *) * noWords + 1);
 	if (arrStr == NULL)
 		return (NULL);
 	allocate_mem(arrStr, str);
