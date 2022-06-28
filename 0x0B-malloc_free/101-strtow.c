@@ -58,7 +58,7 @@ char **strtow(char *str)
 	}
 	if (noWords == 0)
 		return (NULL);
-	arrStr = malloc(sizeof(char *) * noWords + 2);
+	arrStr = malloc(sizeof(char *) * noWords + 8);
 	if (arrStr == NULL)
 		return (NULL);
 	allocate_mem(arrStr, str);
