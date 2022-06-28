@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * allocate_mem - This functions allocates memory
@@ -55,10 +56,12 @@ char **strtow(char *str)
 				noWords++;
 		}
 	}
+	printf("%d\n", noWords);
 
 	arrStr = malloc(sizeof(char *) * noWords + 1);
 	if (arrStr == NULL)
 		return (NULL);
+	allocate_mem();
 	for (i = 0; str[i]; i++)
 	{
 		if (str[i] != ' ')
