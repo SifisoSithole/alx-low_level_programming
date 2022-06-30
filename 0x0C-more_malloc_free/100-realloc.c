@@ -1,4 +1,4 @@
-#incllude <stdlib.h>
+#include <stdlib.h>
 
 /**
  * _realloc - function that reallocates a memory
