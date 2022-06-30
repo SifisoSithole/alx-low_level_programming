@@ -64,7 +64,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		conS[index] = s2[i];
 		index++;
 	}
-	conS[index] = '\0';
 
 	return (conS);
 }
