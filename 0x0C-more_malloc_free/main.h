@@ -1,4 +1,4 @@
-8#ifndef HEADER_FILE
+#ifndef HEADER_FILE
 #define HEADER_FILE
 
 void *malloc_checked(unsigned int b);
