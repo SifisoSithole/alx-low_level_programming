@@ -1,3 +1,5 @@
+#include "dog.h"
+
 /**
  * init_dog - This functions inttialises the dog structure
  * @d: adress of the structure
