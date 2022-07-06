@@ -6,7 +6,7 @@
 /**
  * get_op_func - This function selects the correct function to perfom
  * @s: Operator to perfom
- * 
+ *
  * Return: Address of the correct
  */
 int (*get_op_func(char *s))(int, int)
@@ -30,6 +30,6 @@ int (*get_op_func(char *s))(int, int)
 		}
 		i++;
 	}
-	
+
 	return (NULL);
 }
