@@ -5,8 +5,8 @@
 
 typedef struct type
 {
-	char *t;
-	(*print_func)(char c, ...);
+	char t;
+	void (*print_func)(char c, ...);
 } type;
 
 int sum_them_all(const unsigned int n, ...);
