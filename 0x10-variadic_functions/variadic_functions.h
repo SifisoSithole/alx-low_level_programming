@@ -3,6 +3,12 @@
 
 #include <stdarg.h>
 
+/**
+ * struct type - Struct type
+ *
+ * @t: Character representing data type
+ * @print_func: Function associated
+ */
 typedef struct type
 {
 	char t;
