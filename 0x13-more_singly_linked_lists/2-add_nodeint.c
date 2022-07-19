@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - This function adds node 
+ * add_nodeint - This function adds node
  * Return: pointer to node
  * @head: head node
  * @n: new node data
