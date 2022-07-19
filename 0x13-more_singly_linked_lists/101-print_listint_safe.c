@@ -4,13 +4,14 @@
 /**
  * print_listint_safe - print list
  * @head: head node
+ *
  * Return: amount of nodes in list
  */
 size_t print_listint_safe(const listint_t *head)
 {
 	int len = 0;
 	int i;
-	const listint_t *adr[100];
+	const listint_t *adr[10000];
 
 	if (!head)
 		exit(98);
