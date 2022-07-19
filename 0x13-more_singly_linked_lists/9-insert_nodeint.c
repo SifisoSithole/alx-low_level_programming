@@ -7,7 +7,7 @@
  * @idx: index of the list where to insert the new node
  * @n: Data for the new node
  *
- * Returns the address of the new node
+ * Return: the address of the new node
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -19,13 +19,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	new = malloc(sizeof(listint_t));
 	if (!new)
 		return (NULL);
-	
+
 	new->n = n;
 	h = *head;
 	if (idx == 0)
 	{
 		new->next = *head;
 		*head = new;
+		return (*head);
 	}
 	while (h)
 	{
@@ -38,6 +39,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		h = h->next;
 		i++;
 	}
-	free (new);
+	free(new);
 	return (NULL);
 }
