@@ -11,7 +11,7 @@ size_t print_listint_safe(const listint_t *head)
 {
 	int len = 0;
 	int i;
-	const listint_t *adr[10000000];
+	listint_t *adr[100000];
 
 	if (!head)
 		exit(98);
