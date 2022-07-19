@@ -31,6 +31,7 @@ size_t free_listint_safe(listint_t **h)
 		len++;
 		head = (*h)->next;
 		free(*h);
+		*h = NULL;
 		*h = head;
 	}
 	return (len);
