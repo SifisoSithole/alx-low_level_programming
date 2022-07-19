@@ -11,7 +11,7 @@ size_t free_listint_safe(listint_t **h)
 	int len = 0;
 	int i;
 	listint_t *head;
-	const listint_t *adr[100000];
+	const listint_t *adr[1000000];
 
 	if (!h || !*h)
 		exit(98);
