@@ -4,7 +4,7 @@
 /**
  * add_nodeint - This function adds a new node at the beginning of a listint_t
  * @head: Head of the linked list
- * @n: integer to add on 
+ * @n: integer to add
  *
  * Return: the address of the new element
  */
@@ -15,8 +15,13 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
-	new->n = n;
-	new->next = *head;
-	*head = new;
+	if (*head == NULL)
+		*head = new;
+	else
+	{
+		new->n = n;
+		new->next = *head;
+		*head = new;
+	}
 	return (*head);
 }
