@@ -8,7 +8,6 @@
  */
 listint_t *find_listint_loop(listint_t *h)
 {
-	int len = 0;
 	int i;
 	const listint_t *adr[1000000];
 
@@ -16,13 +15,14 @@ listint_t *find_listint_loop(listint_t *h)
 		return (NULL);
 	while (h)
 	{
-		for (i = 0; i < len; i++)
+		i = 0;
+		while (adr[i])
 		{
 			if (adr[i] == h && adr[i]->n == (*h).n)
 				return (h);
+			i++;
 		}
-		adr[len] = h;
-		len++;
+		adr[i] = h;
 		h = h->next;
 	}
 	return (NULL);
