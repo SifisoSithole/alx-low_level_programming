@@ -22,6 +22,7 @@ size_t free_listint_safe(listint_t **h)
 		{
 			if (adr[i] == *h)
 			{
+				*h = NULL;
 				return (len);
 			}
 		}
@@ -29,7 +30,6 @@ size_t free_listint_safe(listint_t **h)
 		len++;
 		head = (*h)->next;
 		free(*h);
-		*h = NULL;
 		*h = head;
 	}
 	return (len);
