@@ -22,8 +22,6 @@ size_t free_listint_safe(listint_t **h)
 		{
 			if (adr[i] == *h)
 			{
-				free(*h);
-				*h = NULL;
 				return (len);
 			}
 		}
