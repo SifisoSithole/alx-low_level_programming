@@ -3,12 +3,13 @@
  * _pow - This fuction the power raised to the base value
  * @power: Power
  *
- * Returns: the power raised to the base value
+ * Return: the power raised to the base value
  */
 int _pow(int power)
 {
 	int i;
 	int num = 1;
+
 	if (power == 0)
 		return (1);
 	for (i = 1; i <= power; i++)
@@ -38,7 +39,7 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		}
 	}
-	
+
 	len = i - 1;
 
 	for (i = 0; b[i]; i++)
