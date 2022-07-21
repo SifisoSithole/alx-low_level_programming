@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _pow - This fuction the power raised to the base value
  * @power: Power
@@ -26,7 +27,9 @@ void print_binary(unsigned long int n)
 	int i;
 	int print_state = 0;
 	unsigned long int tempNum;
-
+	
+	if (n > 4294967295)
+		exit(98);
 	if (n == 0)
 	{
 		_putchar('0');
