@@ -27,7 +27,7 @@ void print_binary(unsigned long int n)
 	int i;
 	int print_state = 0;
 	unsigned long int tempNum;
-	
+
 	if (n > 4294967295)
 		exit(98);
 	if (n == 0)
