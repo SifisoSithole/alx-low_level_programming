@@ -28,14 +28,12 @@ void print_binary(unsigned long int n)
 	int print_state = 0;
 	unsigned long int tempNum;
 
-	if (n > 4294967295)
-		exit(98);
 	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	for (i = 31; i >= 0; i--)
+	for (i = 65; i >= 0; i--)
 	{
 		tempNum = _pow(i);
 		if (tempNum <= n && print_state == 0)
