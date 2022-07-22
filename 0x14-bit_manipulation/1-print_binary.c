@@ -33,7 +33,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	for (i = 45; i >= 0; i--)
+	for (i = (sizeof(unsigned long int) * 8) - 1; i >= 0; i--)
 	{
 		tempNum = _pow(i);
 		if (tempNum <= n && print_state == 0)
