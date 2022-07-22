@@ -9,7 +9,7 @@
 unsigned long int _pow(int power)
 {
 	int i;
-	unsigned long long int num = 1;
+	unsigned long int num = 1;
 
 	if (power == 0)
 		return (1);
@@ -33,7 +33,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 		return;
 	}
-	for (i = 65; i >= 0; i--)
+	for (i = 45; i >= 0; i--)
 	{
 		tempNum = _pow(i);
 		if (tempNum <= n && print_state == 0)
