@@ -9,7 +9,7 @@
 unsigned long int _pow(int power)
 {
 	int i;
-	unsigned long int num = 1;
+	unsigned long long int num = 1;
 
 	if (power == 0)
 		return (1);
