@@ -11,14 +11,20 @@
  * @fileTo: fileTo
  * @buffer: Buffer
  */
-void write_to_file(int fileFrom, int fileTo, char *buffer)
+void write_to_file(int fileFrom, char *name, int fileTo, char *buffer)
 {
 	int i, no;
 
 	no = read(fileFrom, buffer, 1024);
 	while (no)
 	{
-		dprintf(fileTo, "%s", buffer);
+		no = dprintf(fileTo, "%s", buffer);
+		if (no < 0)
+		{
+
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", name);
+			exit(99);
+		}
 		for (i = 0; i < 1025; i++)
 			buffer[i] = 0;
 		no = read(fileFrom, buffer, 1024);
@@ -56,7 +62,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	write_to_file(fileFrom, fileTo, buffer);
+	write_to_file(fileFrom, argv[2], fileTo, buffer);
 	no = close(fileFrom);
 	if (no == -1)
 	{
