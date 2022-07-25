@@ -42,7 +42,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	res = write(STDERR_FILENO, buffer, noChars);
-	if (res == -1)
+	if (res == -1 || res != noChars)
 	{
 		free(buffer);
 		return (0);
