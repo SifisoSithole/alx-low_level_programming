@@ -9,25 +9,33 @@
  * write_to_file - This function writes to file
  * @fileFrom: fileFrom
  * @fileTo: fileTo
+ * @nm: name
+ * @nm2: Name 2
  * @buffer: Buffer
  */
-void write_to_file(int fileFrom, char *name, int fileTo, char *buffer)
+void write_to_file(int fileFrom, char *nm, char *nm2, int fileTo, char *buffer)
 {
-	int i, no;
+	int i;
+	int noChar1;
+	int noChar;
 
-	no = read(fileFrom, buffer, 1024);
-	while (no)
+	while (noChar)
 	{
-		no = dprintf(fileTo, "%s", buffer);
-		if (no < 0)
+		noChar = read(fileFrom, buffer, 1024);
+		if (noChar == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", nm);
+			exit(98);
+		}
+		noChar1 = dprintf(fileTo, "%s", buffer);
+		if (noChar1 < 0)
 		{
 
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", name);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", nm2);
 			exit(99);
 		}
 		for (i = 0; i < 1025; i++)
 			buffer[i] = 0;
-		no = read(fileFrom, buffer, 1024);
 	}
 }
 
@@ -62,7 +70,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	write_to_file(fileFrom, argv[2], fileTo, buffer);
+	write_to_file(fileFrom, argv[1], argv[2], fileTo, buffer);
 	no = close(fileFrom);
 	if (no == -1)
 	{
