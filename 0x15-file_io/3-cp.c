@@ -28,7 +28,7 @@ void write_to_file(int fileFrom, char *nm, char *nm2, int fileTo, char *buffer)
 			exit(98);
 		}
 		noChar1 = dprintf(fileTo, "%s", buffer);
-		if (noChar1 < 0)
+		if (noChar != noChar1)
 		{
 
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", nm2);
