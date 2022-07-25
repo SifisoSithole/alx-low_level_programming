@@ -20,22 +20,34 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int noChars;
 
 	if (!filename)
+	{
+		free(buffer);
 		return (0);
+	}
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
+	{
+		free(buffer);
 		return (0);
+	}
 
 	noChars = read(fd, buffer, letters);
 	if (noChars == -1)
+	{
+		free(buffer);
 		return (0);
+	}
 
 	res = write(STDERR_FILENO, buffer, noChars);
 	if (res == -1)
+	{
+		free(buffer);
 		return (0);
+	}
 
 	close(fd);
 	free(buffer);
 
-	return (noChars);
+	return (res);
 }
