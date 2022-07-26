@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+
 /**
  * main - Entry point
  * @argc: Number of arguments
