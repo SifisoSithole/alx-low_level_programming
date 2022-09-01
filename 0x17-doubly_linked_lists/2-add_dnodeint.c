@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - Adds node at the beginning of a linked list
+ * add_dnodeint - Adds node at the beginning of a linked list
  * @head: Pointer to the head of the linked list
  * @n: Integer to insert
  *
@@ -13,6 +13,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	dlistint_t *new;
 
 	new = malloc(sizeof(dlistint_t));
+	if (!new)
+		return (NULL);
 	new->n = n;
 	new->prev = NULL;
 	if (!head || !*head)
@@ -23,5 +25,5 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		new->next = *head;
 	}
 	*head = new;
-	return (*head);
+	return (new);
 }

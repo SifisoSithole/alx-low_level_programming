@@ -5,7 +5,7 @@
  * print_dlistint - This function prints all of the elements in a list
  * @h: head of the list
  *
- * Returns: Number of nodes
+ * Return: Number of nodes
  */
 size_t print_dlistint(const dlistint_t *h)
 {
