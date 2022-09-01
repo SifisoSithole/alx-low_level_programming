@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index - Deletes a node at index 
+ * delete_dnodeint_at_index - Deletes a node at index
  * @head: Pointer to the head of the dlistint
  * @index: Index of node to delete
  *
@@ -36,8 +36,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		if (i == index)
 		{
-			h->prev->next = h->next;
-			h->next->prev = h->prev;
+			if (h->next)
+			{	
+				h->prev->next = h->next;
+				h->next->prev = h->prev;
+			}
+			else
+				h->prev->next = NULL;
 			free(h);
 			return (1);
 		}
