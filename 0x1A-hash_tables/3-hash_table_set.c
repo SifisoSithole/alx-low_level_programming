@@ -15,19 +15,23 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *node;
 
-	if (!key || *key == '\0' || !value)
+	if (!ht || !key || *key == '\0' || !value)
 		return (0);
 
-	if (!ht)
-		ht = hash_table_create(1024);
 	index = key_index((const unsigned char *) key, ht->size);
 	node = malloc(sizeof(hash_node_t));
 	if (!node)
 		return (0);
 	node->key = strdup(key);
-	node->value = strdup(value);
-	if (!node->key || !node->value)
+	if (!node->key)
 	{
+		free(node);
+		return (0);
+	}
+	node->value = strdup(value);
+	if (!node->value)
+	{
+		free(node->key);
 		free(node);
 		return (0);
 	}
